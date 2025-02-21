@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #0D1117;
+    --color-accent-1: #7D84B2;
+    --color-text-color: #EAEAEA;
+    --color-accent-2:#FC5130;
+    --font-poppins: "Poppins", sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/JetBrainsMono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
