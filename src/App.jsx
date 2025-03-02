@@ -1,5 +1,5 @@
 import './App.css'
-import HomePage from './components/Home'
+import LandingPage from './components/landing-page'
 import Navbar from './components/navbar'
 // import Welcome from './components/Welcome'
 
@@ -9,7 +9,7 @@ function App() {
     <div className='flex flex-col items-center w-full justify-center'>
       {/* <Welcome/> */}
       <Navbar/>
-      {/* <HomePage/> */}
+      <LandingPage/>
     </div>
   )
 }

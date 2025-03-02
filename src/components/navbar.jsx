@@ -19,11 +19,11 @@ const Navbar = ({ onNavClick }) => {
   }
 
   return (
-    <nav className='px-[5%] w-full flex flex-col items-center font-jetbrains'>
+    <nav className='px-[5%] w-full flex flex-col z-10 items-center font-jetbrains'>
       {/* Mobile Nav */}
       <div className='lg:hidden grid grid-cols-12 gap-[1px] w-full pt-4'>
-        <div className='col-start-12 z-10 col-end-13' onClick={toggleMobileNav}>
-          <FaBars className='w-[35px] md:w-[40px] md:h-[35px] text-accent-2 h-[25px]'/>
+        <div className='col-start-12  col-end-13' onClick={toggleMobileNav}>
+          <FaBars className='w-[35px] md:w-[40px] md:h-[35px] text-text-color h-[25px]'/>
         </div>
         <AnimatePresence>
         {isMobileNavOpen? 

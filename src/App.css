@@ -8,6 +8,7 @@
     --font-poppins: "Poppins", sans-serif;
     --font-jetbrains: "JetBrains Mono", monospace;
     --font-montserrat: "Montserrat", sans-serif;
+    --font-inter: "Inter", sans-serif;
 }
 
 @font-face {
@@ -23,3 +24,10 @@
     font-weight: normal;
     font-style: normal;
   }
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
