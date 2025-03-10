@@ -20,7 +20,7 @@ function Welcome() {
         return () => control.stop()
     }, [])
     return (
-        <motion.div className="w-[100%] h-screen absolute z-10 bg-black flex flex-col justify-center items-center"
+        <motion.div className="w-screen h-screen absolute z-10 bg-black flex flex-col justify-center items-center"
         initial={{ opacity: 1 }}
         animate={{ opacity: fadeOut? [1,1,1,1,1,1,0] : 1, display: fadeOut? ["flex","flex","flex","none"]: "flex", y: fadeOut? [0,0,0,-300]: 0}}
         transition={{ type: "keyframes" , duration: 1}}
@@ -28,7 +28,7 @@ function Welcome() {
         <motion.div
         animate={{ y: fadeOut? [0,80,-400]: 0}}
         transition={{ type: "keyframes" , duration: .5}}
-        className="text-white text-[7vh]"
+        className="text-accent-2 text-[7vh]"
         >
             {greeting}
         </motion.div>

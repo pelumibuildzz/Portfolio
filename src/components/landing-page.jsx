@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const LandingPage = () => {
 
   return (
-    <section className='max-w-screen w-screen pt-[10vw] md:pt-[3vh] h-screen'>
+    <section className='max-w-screen min-w-screen w-screen pt-[10vw] md:pt-[3vh] h-fit mb-[7vh] md:mb-[15vh] lg:mb-[10vh]'>
       {/* PELUMI Section */}
       <motion.div
         className='text-[7.6vh] md:text-[10vh] w-screen bg-accent-2 text-primary lg:hidden font-montserrat overflow-hidden'
@@ -44,8 +44,8 @@ const LandingPage = () => {
 
       {/* Middle Content */}
       <div className='font-montserrat my-10 px-[5%] grid grid-cols-12 gap-[1px] text-[17px] md:text-[28px] lg:text-[40px]'>
-        <div className='col-start-4 col-end-13 md:col-start-5 overflow-hidden max-h-[22px] md:max-h-[34px] lg:max-h-[46px]'>
-            <motion.div initial={{ y: 100 }} animate={{ y:0 }} transition={{ delay:.4, duration: .9 }}>
+        <div className='col-start-4 col-end-13 md:col-start-5 overflow-hidden max-h-[30px] md:max-h-[40px] lg:max-h-[53px]'>
+            <motion.div initial={{ y: 100 }} animate={{ y:0 }} transition={{ delay:.4, duration: .9 }}>"
                 <span className=' text-accent-2'>Code </span>
                 is my
                 <span className='text-accent-1'> Canvas, </span>
@@ -71,7 +71,7 @@ const LandingPage = () => {
         <motion.span
           initial={{ x: "120%" }}
           animate={{ 
-            x: ["120%","55%", "5%", "-100%"] , 
+            x: ["120%","55%", "5%", "-120%"] , 
             transition: { duration:4, times: [0, 0.125, 0.875, 1], repeat: Infinity, repeatType: "loop", delay: 1.4 }
           }}
           className='block w-fit whitespace-nowrap'
@@ -89,7 +89,7 @@ const LandingPage = () => {
         <motion.span
         initial={{ x: "120%" }}
         animate={{ 
-          x: ["100vw","50vw", "10vw", "-35vw"] , 
+          x: ["100vw","50vw", "10vw", "-50vw"] , 
           transition: { duration:5, times: [0, 0.125, 0.875, 1], repeat: Infinity, repeatType: "loop", delay: 1.4 }
         }}
         className='block w-fit whitespace-nowrap leading-[8vw]'
@@ -109,8 +109,8 @@ const LandingPage = () => {
       </motion.div>
 
       <div className='px-[5%] py-10 grid grid-cols-12 gap-[15px] lg:py-5 text-[13px] lg:gap-[45px] md:text-[1.9vh] font-inter lg:mt-1  mt-10'>
-        <motion.button initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .5 }} className='col-start-1 col-end-7 border-2 border-accent-2 py-2 rounded-lg md:col-start-4 lg:col-start-5'>Let's Talk</motion.button>
-        <motion.button initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }}  transition={{ delay: .5 }} className='col-start-7 col-end-13 py-2 rounded-lg bg-accent-2 md:col-end-10 lg:col-end-9'>My Work</motion.button>
+        <motion.button initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .5 }} className='col-start-1 col-end-7 border-2 border-accent-2 py-2 rounded-lg md:col-start-4 lg:col-start-5 cursor-pointer'>Let's Talk</motion.button>
+        <motion.button initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }}  transition={{ delay: .5 }} className='col-start-7 col-end-13 py-2 rounded-lg bg-accent-2 md:col-end-10 lg:col-end-9 cursor-pointer'>My Work</motion.button>
       </div>
     </section>
   );

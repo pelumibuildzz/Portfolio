@@ -19,7 +19,11 @@ const Navbar = ({ onNavClick }) => {
   }
 
   return (
-    <nav className='px-[5%] w-full flex flex-col z-10 items-center font-jetbrains'>
+    <motion.nav  className='px-[5%] w-full flex flex-col z-10 items-center font-jetbrains'
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1}}
+      transition={{ duration: .5, delay: 1.4}}
+    >
       {/* Mobile Nav */}
       <div className='lg:hidden grid grid-cols-12 gap-[1px] w-full pt-4'>
         <div className='col-start-12  col-end-13' onClick={toggleMobileNav}>
@@ -63,7 +67,7 @@ const Navbar = ({ onNavClick }) => {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

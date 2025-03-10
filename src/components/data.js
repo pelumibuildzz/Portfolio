@@ -8,6 +8,7 @@ export const skills = [
         },
       ];
 export const aspiringList = ['DevOps Engineer, Entrepreneur.'];
+
 export const contactInfos= [
         {
           link: "https://github.com/TR1432",
@@ -30,3 +31,46 @@ export const contactInfos= [
         icon: 'fa-regular fa-envelope',
         title: 'My Gmail'
       }]
+
+export const projectList = [
+  {
+    img: "/images/fsl.jpeg",
+    title: "FSL",
+    description: "Fantasy Football Web-App for Student Work Experiece Programme.",
+    links: {
+      git: "https://github.com/pelumibuildzz/FSL",
+    },
+    icons: "HTMLCssJsBstrapFlask",
+    year: "2024"
+  },
+  {
+    img: "/images/booking-api.png",
+    title: "Booking System Api",
+    description: "A REST Api to create and manage booking events in auditotiums.",
+    links: {
+      git: "https://github.com/pelumibuildzz/Booking-System-Api",
+    },
+    icons: "NodeExpMong",
+    year: "2025"
+  },
+  {
+    img: "/images/booking-app.jpeg",
+    title: "Booking System Frontend",
+    description: "Frontend Application for previously mentioned Booking system.",
+    links: {
+      git: "https://github.com/pelumibuildzz/BookingSys-Frontend"
+    },
+    icons: "React",
+    year: "2025"
+  },
+  {
+    img: "/images/echo.jpg",
+    title: "Echo Api",
+    description: "Rest Api for a Petition App in Covenant University.",
+    links: {
+      git: "https://github.com/pelumibuildzz/Echo-API"
+    },
+    icons: "NodeExpMong",
+    year: "2025"
+  }
+]
