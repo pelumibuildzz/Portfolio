@@ -73,14 +73,14 @@ const InvertedProjectCard = ({ project, index }) => {
         animate={ isInView ? { opacity: 1 , x: 0 } : {}}
         transition={{ duration: .6}}
     >
-        <div className='col-span-1'>
-            <motion.a href={project.links.git} target='blank' rel="noopener noreferrer"  className=''><FaGithub className='text-accent-2 md:h-[30px] md:mt-2 md:w-[30px] w-[20px] h-[20px]' /></motion.a>
+        <div className='col-span-1 order-2 md:order-1'>
+            <motion.a href={project.links.git}  target='blank' rel="noopener noreferrer"  className='h-fit md:mt-2'><FaGithub className='text-accent-2 md:h-[35px] md:w-[35px] w-[20px] h-[20px] hover:text-accent-1' /></motion.a>
         </div>
-        <h1 className='col-span-2 md:col-span-1 text-[18px] md:text-[28px] lg:text-[40px] font-medium font-jetbrains'>{project.title}</h1>
-        <div className='col-span-3 md:col-span-1 h-fit'>
+        <h1 className='col-span-2 md:col-span-1 text-[18px] md:text-[28px] lg:text-[40px] font-medium font-jetbrains order-1 md:order-2'>{project.title}</h1>
+        <div className='col-span-3 md:col-span-1 h-fit order-4 md:order-3'>
             <img src={project.img} className='w-[80vw] h-[28vh] md:h-[300px] brightness-90' alt={`${project.title} image`} />
         </div>
-        <div className='grid grid-cols-1 col-span-3 gap-[10px] md:col-span-1  text-[15px] md:text-[2.2vh] lg:text-[1.5vw] font-mono'>
+        <div className='grid grid-cols-1 col-span-3 gap-[10px] md:col-span-1  text-[15px] md:text-[2.2vh] lg:text-[1.5vw] font-mono order-3 md:order-4'>
             <h2 className='col-span-1'>{project.description}</h2>
             <div className='col-span-1 flex gap-2 text-accent-2'>{relatedIcons(project.icons)}</div>
             <h5 className='col-span-1 text-right text-[15px] md:text-[2.2vh] lg:text-[1.5vw]'>{project.year}</h5>

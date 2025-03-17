@@ -56,7 +56,7 @@ const LandingPage = () => {
                 -- the 
                 <span className=' text-accent-2'> Internet </span>
                 my
-                <span className='text-accent-1'> gallery </span>
+                <span className='text-accent-1'> gallery</span>"
             </motion.div>
         </div>
       </div>

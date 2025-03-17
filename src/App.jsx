@@ -1,5 +1,6 @@
 import './App.css'
 import AboutPage from './components/about-page'
+import ContactPage from './components/conatct-page'
 import LandingPage from './components/landing-page'
 import Navbar from './components/navbar'
 import ProjectsPage from './components/projects-page'
@@ -14,6 +15,7 @@ function App() {
       <LandingPage/>
       <ProjectsPage/>
       <AboutPage/>
+      <ContactPage/>
     </div>
   )
 }
