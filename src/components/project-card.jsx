@@ -68,7 +68,7 @@ const ProjectCard = ({ project, index }) => {
     }
 
   return (
-    <motion.div className='grid grid-cols-3 md:grid-cols-2 gap-[10px] col-span-1 z-10 bg-primary border border-accent-2 rounded-md md:col-span-10 lg:col-span-8  text-left px-4 py-2  max-h-[450px]'
+    <motion.div className='grid grid-cols-3 md:grid-cols-2 gap-[10px] col-span-1 z-10 bg-primary border border-accent-2 rounded-md md:col-span-10 lg:col-span-8 text-left px-4 py-2 max-h-[450px]'
         ref={ref}
         initial={ (index % 2) == 0 ? { opacity: 0, x: -100 } : { opacity: 0, x:  100 }}
         animate={ isInView ? { opacity: 1 , x: 0 } : {}}

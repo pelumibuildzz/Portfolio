@@ -9,7 +9,7 @@ const AboutPage = () => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section className='max-w-screen w-screen mt-[4vw] lg:mt-[10vw] md:mt-[1vh] h-fit font-mono grid grid-cols-12 gap-[15px] px-[8vw]'>
+    <section id='AboutSection' className='max-w-screen w-screen mt-[4vw] lg:mt-[10vw] md:mt-[1vh] h-fit font-mono grid grid-cols-12 gap-[15px] px-[8vw]'>
       <h1 className='col-span-12 text-[17px] md:text-[28px] lg:text-[40px] text-accent-2 text-center mb-8 lg:mb-18 font-montserrat font-bold'>ABOUT ME</h1>
       <FlowInText text={mainText}/>
       <div className='col-span-12 lg:col-span-8 text-[18px] md:text-[24px] lg:text-[30px]'>

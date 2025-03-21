@@ -7,8 +7,7 @@ export const skills = [
           tools: 'Python | Nodejs | TypeScript | FastApi'
         },
       ];
-export const aspiringList = ['DevOps Engineer, Entrepreneur.'];
-
+      
 export const contactInfos= [
         {
           link: "https://github.com/TR1432",
@@ -51,16 +50,6 @@ export const projectList = [
       git: "https://github.com/pelumibuildzz/Booking-System-Api",
     },
     icons: "NodeExpMong",
-    year: "2025"
-  },
-  {
-    img: "/images/booking-app.jpeg",
-    title: "Booking System Frontend",
-    description: "Frontend Application for previously mentioned Booking system.",
-    links: {
-      git: "https://github.com/pelumibuildzz/BookingSys-Frontend"
-    },
-    icons: "React",
     year: "2025"
   },
   {

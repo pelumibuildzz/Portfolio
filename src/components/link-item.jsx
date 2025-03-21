@@ -17,6 +17,15 @@ const LinkItem = ({ id, label, classList }) => {
         transition: { delay: index * 0.05 },
       }),
     };
+
+    const scrollToSection = () => {
+      if (id != 'Resume'){
+        document.getElementById(`${id}Section`).scrollIntoView({behavior: 'smooth'})
+      }else{
+        let newTab = window.open('https://drive.google.com/file/d/1EXPLfNoI0qET3NECA6Yec1_BqaJ424F1/view?usp=drive_link', "_blank")
+        newTab.opener = null
+      }
+    }
   
     return (
       <motion.div
@@ -27,6 +36,7 @@ const LinkItem = ({ id, label, classList }) => {
         className={classList}
         onHoverStart={() => setHovered(true)}
         onHoverEnd={() => setHovered(false)}
+        onClick={ scrollToSection }
       >
         {label.split("").map((char, index) => (
           <motion.div

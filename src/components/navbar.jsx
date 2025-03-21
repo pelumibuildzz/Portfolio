@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaBars } from "react-icons/fa6";
 import LinkItem from './link-item';
 
-const Navbar = ({ onNavClick }) => {
+const Navbar = ( ) => {
   const navLinks = [
     { id: 'Home', label: 'Home'},
     { id: 'Projects', label: 'Projects'},
@@ -18,26 +18,31 @@ const Navbar = ({ onNavClick }) => {
     setIsMobileNav(!isMobileNavOpen);
   }
 
+  const onNavClick = ( id ) => {
+    document.getElementById(`${id}Section`).scrollIntoView({behavior: 'smooth'})
+    toggleMobileNav()
+  }
+
   return (
-    <motion.nav  className='px-[5%] w-full flex flex-col z-10 items-center font-jetbrains'
+    <motion.nav  className='lg:px-[5%] w-full flex flex-col z-30 items-center static font-jetbrains'
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1}}
       transition={{ duration: .5, delay: 1.4}}
     >
       {/* Mobile Nav */}
-      <div className='lg:hidden grid grid-cols-12 gap-[1px] w-full pt-4'>
+      <div className='lg:hidden grid grid-cols-12 gap-[1px] w-full pt-4 fixed'>
         <div className='col-start-12  col-end-13' onClick={toggleMobileNav}>
           <FaBars className='w-[35px] md:w-[40px] md:h-[35px] text-text-color h-[25px]'/>
         </div>
         <AnimatePresence>
         {isMobileNavOpen? 
-        <div className='absolute z-0 right-0 mt-4 md:mt-10 text-[14px] md:text-[20px] pe-12 md:pe-20'>
+        <div className='absolute  right-0 mt-8 md:mt-10 text-[14px] md:text-[20px] pe-12 md:pe-20'>
           {navLinks.map(({id, label }, index) => (
             <motion.div 
             key={id} 
             id={id} 
             role="button" 
-            className="my-5 cursor-pointer" 
+            className={index == 0? "cursor-pointer" : "my-5 cursor-pointer"} 
             onClick={() => onNavClick(id)} 
             tabIndex={0}
             initial={{ x: 200 }}
