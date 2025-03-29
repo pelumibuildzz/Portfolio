@@ -58,15 +58,15 @@ const LandingPage = () => {
       </motion.div>
 
       {/* Middle Content */}
-      <div className='font-montserrat my-10 px-[5%] grid grid-cols-12 gap-[1px] text-[17px] md:text-[28px] lg:text-[40px]'>
-        <div className='col-start-4 col-end-13 md:col-start-5 overflow-hidden max-h-[30px] md:max-h-[40px] lg:max-h-[53px]'>
+      <div className='font-montserrat my-10 px-[5%] flex flex-col items-center justify-center gap-[1px] text-[17px] md:text-[28px] lg:text-[40px]'>
+        <div className=' overflow-hidden max-h-[30px] md:max-h-[40px] lg:max-h-[53px]'>
             <motion.div initial={{ y: 100 }} animate={{ y:0 }} transition={{ delay:.4, duration: .9 }}>"
                 <span className=' text-accent-2'>Code </span>
                 is my
                 <span className='text-accent-1'> Canvas, </span>
             </motion.div>
         </div>
-        <div className='col-start-4 col-end-13 md:col-start-5 overflow-hidden max-h-[30px] md:max-h-[40px] lg:max-h-[53px]'>
+        <div className=' lg:col-start-5 overflow-hidden max-h-[30px] md:max-h-[40px] lg:max-h-[53px]'>
             <motion.div initial={{ y: 100 }} animate={{ y:0 }} transition={{ delay:1, duration: .9 }}>
                 -- the 
                 <span className=' text-accent-2'> Internet </span>
@@ -114,7 +114,7 @@ const LandingPage = () => {
       </motion.div>
 
       {/* Additional Content */}
-      <motion.div className='text-center m-[1.6vw] px-[2%] text-[15px] md:text-[2.2vh] lg:text-[1.5vw] font-inter lg:pt-3 pt-5'
+      <motion.div className='text-center m-[1.6vw] px-[2%] text-[15px] md:text-[2.0vh] lg:text-[27px] font-inter lg:pt-3 pt-5'
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1.2, duration: .5}}
@@ -123,7 +123,7 @@ const LandingPage = () => {
         <span className='md:block'> and turning problems into long-lasting solutions</span>
       </motion.div>
 
-      <div className='px-[5%] py-10 grid grid-cols-12 gap-[15px] lg:py-5 text-[13px] lg:gap-[45px] md:text-[1.9vh] font-inter lg:mt-1  mt-10'>
+      <div className='px-[5%] py-10 grid grid-cols-12 gap-[15px] lg:py-5 text-[13px] lg:gap-[45px] md:text-[1.9vh] lg:text-[23px] font-inter lg:mt-1  mt-10'>
         <motion.button 
         initial={{ opacity: 0, x: -100 }} 
         animate={{ opacity: 1, x: 0 }} 
