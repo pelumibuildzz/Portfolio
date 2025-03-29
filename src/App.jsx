@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className='flex flex-col items-center w-full justify-center scroll-smooth'>
-      {/* <Welcome/> */}
       <Navbar/>
       <LandingPage/>
       <ProjectsPage/>
