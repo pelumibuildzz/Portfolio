@@ -1,4 +1,29 @@
-export const skills = [
+export interface Skill {
+  name: string;
+  tools: string;
+}
+
+export interface ContactInfo {
+  link: string;
+  icon: string;
+  title: string;
+}
+
+export interface ProjectLinks {
+  git: string;
+  live?: string;
+}
+
+export interface Project {
+  img: string;
+  title: string;
+  description: string;
+  links: ProjectLinks;
+  icons: string;
+  year: string;
+}
+
+export const skills: Skill[] = [
   {
     name: "Frontend Developer",
     tools: "React | Next.js | Framer | Javascript | Tailwind",
@@ -9,7 +34,7 @@ export const skills = [
   },
 ];
 
-export const contactInfos = [
+export const contactInfos: ContactInfo[] = [
   {
     link: "https://github.com/pelumibuildzz",
     icon: "fa-brands fa-github",
@@ -37,7 +62,7 @@ export const contactInfos = [
   },
 ];
 
-export const projectList = [
+export const projectList: Project[] = [
   {
     img: "/images/fsl.jpeg",
     title: "FSL",

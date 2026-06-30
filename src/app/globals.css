@@ -4,7 +4,7 @@
     --color-primary: #0D1117;
     --color-accent-1: #C45BAA;
     --color-text-color: #EAEAEA;
-    --color-accent-2:#FC5130;
+    --color-accent-2: #FC5130;
     --font-poppins: "Poppins", sans-serif;
     --font-jetbrains: "JetBrains Mono", monospace;
     --font-montserrat: "Montserrat", sans-serif;
@@ -16,18 +16,23 @@
     src: url("/fonts/JetBrainsMono.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 @font-face {
     font-family: "Montserrat";
     src: url("/fonts/Montserrat.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Inter";
+    src: url("/fonts/Inter.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text-color);
 }

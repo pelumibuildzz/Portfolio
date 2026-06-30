@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import FlowInText from "./flow-in-text";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+
 const AboutPage = () => {
-  let mainText =
+  const mainText =
     "I BUILD BEAUTIFUL WEBSITES, SCALABLE APPLICATIONS, AND LASTING TECH SOLUTIONS.";
 
   const ref = useRef(null);
@@ -39,9 +42,9 @@ const AboutPage = () => {
         >
           Beyond my work as a full-stack developer, I have a deep appreciation
           for art, ancient philosophy, and gaming, which often inspire my
-          creative approach to problem-solving. When I’m not coding, you’ll
-          likely find me leveling up my COD: Warzone weapons or analyzing
-          hip-hop lyricism.
+          creative approach to problem-solving. When I&apos;m not coding,
+          you&apos;ll likely find me leveling up my COD: Warzone weapons or
+          analyzing hip-hop lyricism.
         </motion.div>
         <motion.div
           className=""
@@ -49,12 +52,12 @@ const AboutPage = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.25, delay: 0.4 }}
         >
-          I'm working on exciting projects that I can't wait to share. But I'm
-          always open to new challenges, collaborations, and opportunities to
-          create something amazing.
+          I&apos;m working on exciting projects that I can&apos;t wait to share.
+          But I&apos;m always open to new challenges, collaborations, and
+          opportunities to create something amazing.
         </motion.div>
       </div>
-      <div className="col-span-12 lg:col-span-4 text-[18px] md:text-[24px] font-light lg:text-[30px] ">
+      <div className="col-span-12 lg:col-span-4 text-[18px] md:text-[24px] font-light lg:text-[30px]">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
